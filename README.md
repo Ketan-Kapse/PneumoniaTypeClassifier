@@ -65,6 +65,8 @@ ROC Curve
 
 ![bact_gradcam](img/bact_GRADCAM.png)
 
+Grad CAM output
+
 ## Notes
 
 - Unsegmented images are used as input in both of the classifiers. Segmentation of the input can potentially lead to better classifications and reduce the occurence of wrong outputs on test data. 
