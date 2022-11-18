@@ -3,11 +3,11 @@ DL classifiers for classifying various types of pneumonia(including COVID-19 ind
 
 ## Dependencies
 
-Python >= 3.5
-Tensorflow
-Keras
-numpy
-cv2
+- Python >= 3.5
+- Tensorflow
+- Keras
+- numpy
+- cv2
 
 ## Details
 This project has two classifier models to classify viral and bacterial pneumonia. Separate classifiers were made after taking into account the sizes of both groups' datasets and their quality. Eg. the bacterial dataset has a significantly higher number of x-rays than the viral dataset and includes more diversity in origin as shown below.
