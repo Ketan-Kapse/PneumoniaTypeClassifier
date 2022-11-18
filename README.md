@@ -1,6 +1,14 @@
 # PneumoniaTypeClassifier
 DL classifiers for classifying various types of pneumonia(including COVID-19 induced pneumonia) from unsegmented chest x-ray scans (acquired from the <a href = "https://github.com/ieee8023/covid-chestxray-dataset">Cohen repo</a>.)
 
+## Dependencies
+
+Python >= 3.5
+Tensorflow
+Keras
+numpy
+cv2
+
 ## Details
 This project has two classifier models to classify viral and bacterial pneumonia. Separate classifiers were made after taking into account the sizes of both groups' datasets and their quality. Eg. the bacterial dataset has a significantly higher number of x-rays than the viral dataset and includes more diversity in origin as shown below.
 
@@ -36,4 +44,29 @@ ROC Curve
 
 
 Grad CAM output
+
+
+## Bacterial Classifier
+The neural net for this classifier is more complex with more dense units per layer.
+
+![bact_network](img/bact_network.png)
+
+![bact_train](img/bact_train_acc.png)
+
+Training Accuracy
+
+![bact_loss](img/bact_train_loss.png)
+
+Training Loss
+
+![bact_roc](img/bact_roc.png)
+
+ROC Curve
+
+![bact_gradcam](img/bact_GRADCAM.png)
+
+## Notes
+
+- Unsegmented images are used as input in both of the classifiers. Segmentation of the input can potentially lead to better classifications and reduce the occurence of wrong outputs on test data. 
+- Further fine tuning of the networks for better performance.
 
